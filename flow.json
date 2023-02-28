@@ -1,0 +1,48 @@
+{
+	"contracts": {
+		"FlowToken": {
+			"source": "./src/cadence/contracts/FlowToken.cdc",
+			"aliases": {
+				"testnet": "7e60df042a9c0868"
+			}
+		},
+		"FungibleToken": {
+			"source": "./src/cadence/contracts/FungibleToken.cdc",
+			"aliases": {
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"NFTMarketplace": "./src/cadence/contracts/NFTMarketplace.cdc",
+		"NFTStore.cdc": "./src/cadence/contracts/NFTStore.cdc",
+		"NonFungibleToken": {
+			"source": "./src/cadence/contracts/NonFungibleToken.cdc",
+			"aliases": {
+				"testnet": "631e88ae7f1d7c20"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "30cdf2ce43d844efa762bedc675b8db956a18dde046addfcf414ea76cd217f91"
+		},
+		"testnet": {
+			"address": "090c944f25e5e947",
+			"key": "d4c4a54c7870f12eeee6b5796018d84844bccdf8d942a1cc4c9ce330da2f4f49"
+		}
+	},
+	"deployments": {
+		"testnet": {
+			"testnet": [
+				"NFTStore.cdc",
+				"NFTMarketplace"
+			]
+		}
+	}
+}
