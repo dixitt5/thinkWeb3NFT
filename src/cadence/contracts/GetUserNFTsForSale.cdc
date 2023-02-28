@@ -1,6 +1,6 @@
-import NonFungibleToken from "../contracts/NonFungibleToken.cdc"
-import NFTStore from "../contracts/NFTStore.cdc"
-import NFTMarketplace from "../contracts/NFTMarketplace.cdc"
+import NonFungibleToken from "./NonFungibleToken.cdc"
+import NFTStore from "./NFTStore.cdc"
+import NFTMarketplace from "./NFTMarketplace.cdc"
 
 pub fun main(account: Address): {UInt64: NFTMarketplace.SaleItem} {
   let saleCollection = getAccount(account).getCapability(/public/SaleCollection)

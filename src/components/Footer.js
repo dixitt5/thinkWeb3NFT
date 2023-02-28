@@ -18,7 +18,7 @@ function Footer() {
           <VuiBox mr={{ xs: '20px', lg: '46px' }}>
             <VuiTypography
               component="a"
-              href={`${process.env.PUBLIC_URL}/items`}
+              href={`${process.env.REACT_APP_PUBLIC_URL}/items`}
               variant="body2"
               color="black"
             >
@@ -28,7 +28,7 @@ function Footer() {
           <VuiBox mr={{ xs: '20px', lg: '46px' }}>
             <VuiTypography
               component="a"
-              href={`${process.env.PUBLIC_URL}/activity`}
+              href={`${process.env.REACT_APP_PUBLIC_URL}/activity`}
               variant="body2"
               color="black"
             >
@@ -38,7 +38,7 @@ function Footer() {
           <VuiBox mr={{ xs: '20px', lg: '46px' }}>
             <VuiTypography
               component="a"
-              href={`${process.env.PUBLIC_URL}`}
+              href={`${process.env.REACT_APP_PUBLIC_URL}`}
               variant="body2"
               color="black"
             >

@@ -1,5 +1,5 @@
 const APIURL =
-  process.env.NODE_ENV === 'development'
+  process.env.REACT_APP_NODE_ENV === 'development'
     ? 'http://localhost:5000'
     : 'https://nftmarketflow-backend.onrender.com';
 

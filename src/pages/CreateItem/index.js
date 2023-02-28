@@ -17,6 +17,9 @@ import VuiInput from 'vui-theme/components/VuiInput';
 import VuiTypography from 'vui-theme/components/VuiTypography';
 
 export default function CreateItem() {
+  // const a = p
+  // console.log(process.env.IPFS_API_KEY);
+
   const navigate = useNavigate();
   const {
     state: { user, loggedIn, collectionReady, ipfsAPIKey },
@@ -42,7 +45,10 @@ export default function CreateItem() {
       mintedDate: new Date().toUTCString(),
     };
     try {
-      const ipfsHash = await mint(ipfsAPIKey, itemData, dispatch);
+      console.log(process.env.REACT_APP_IPFS_API_KEY);
+      console.log(itemData);
+      console.log(dispatch);
+      const ipfsHash = await mint(process.env.REACT_APP_IPFS_API_KEY, itemData, dispatch);
       await getUserNFTs(dispatch, user?.addr);
       await insertActivity(
         dispatch,

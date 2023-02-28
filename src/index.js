@@ -8,13 +8,14 @@ import theme from 'vui-theme/assets/theme';
 import { VisionUIControllerProvider } from 'vui-theme/context';
 import './app.css';
 
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
   <ThemeProvider theme={theme}>
     <GlobalContextProvider>
       <VisionUIControllerProvider>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
           <App />
         </BrowserRouter>
       </VisionUIControllerProvider>

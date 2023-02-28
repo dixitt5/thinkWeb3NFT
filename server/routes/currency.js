@@ -25,7 +25,7 @@ currencyRoutes.get('/', async (req, res) => {
     try {
       const response = await fetch(`https://api.coincap.io/v2/assets?search=${symbol}`, {
         headers: {
-          Authorization: `Bearer ${process.env.COINCAP_API_KEY}`,
+          Authorization: `Bearer ${process.env.REACT_APP_COINCAP_API_KEY}`,
         },
       });
       const jsonResult = await response.json();
